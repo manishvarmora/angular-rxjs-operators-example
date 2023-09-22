@@ -1,0 +1,63 @@
+<h3>Of and From</h3>
+
+<h5 class="pt-3">Ex - 01 (Of) <span class="text-muted">convert from String & Object</span></h5><hr>
+<div class="row">
+
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-header"><strong>Data:</strong> of('Manish','Sukesh','Stephen')</div>
+      <div class="card-body">
+        <ul id="of-container"></ul>
+      </div>
+      <div class="card-footer">
+        <button class="btn btn-primary" (click)="OfSubscribe()">Subscribe</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-header"><strong>Data:</strong> of(&#123;A:'Manish',B:'Sukesh',C:'Stephen'&#125;)</div>
+      <div class="card-body">
+        <ul id="ofObj-container" *ngIf="OfObjData">
+          <li>A: {{OfObjData.A}}</li>
+          <li>B: {{OfObjData.B}}</li>
+          <li>C: {{OfObjData.C}}</li>
+        </ul>
+      </div>
+      <div class="card-footer">
+        <button class="btn btn-primary" (click)="OfObjSubscribe()">Subscribe</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<h5 class="pt-3">Ex - 02 (From) <span class="text-muted">convert from Array & String</span></h5><hr>
+<div class="row">
+
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-header"><strong>Data:</strong> from(['Manish','John','Stephen'])</div>
+      <div class="card-body">
+        <ul id="from-container"></ul>
+      </div>
+      <div class="card-footer">
+        <button class="btn btn-primary" (click)="FromSubscribe()">Subscribe</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-header"><strong>Data:</strong> from('Hi, I'm mbvarmora')</div>
+      <div class="card-body">
+        <ul id="fromstring-container"></ul>
+      </div>
+      <div class="card-footer">
+        <button class="btn btn-primary" (click)="FromStringSubscribe()">Subscribe</button>
+      </div>
+    </div>
+  </div>
+
+</div>

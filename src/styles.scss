@@ -9,3 +9,13 @@
 .pointer{
   cursor: pointer;
 }
+
+// for custom observable component
+ul.custObs.completed li{
+  color: green;
+  border-color: green;
+}
+ul.custObs.error li{
+  color: red;
+  border-color: red;
+}

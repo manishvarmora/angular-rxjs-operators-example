@@ -1,0 +1,34 @@
+<h3>Custom Observable</h3>
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-header"><strong>Data:</strong> Manual</div>
+      <div class="card-body">
+        <ul id="custObs-container" class="custObs" [ngClass]="obsStatus == 'completed'?'completed':obsStatus == 'error'?'error':''"></ul>
+        <p *ngIf="obsStatus">status: {{obsStatus}}</p>
+      </div>
+      <div class="card-footer">
+        <button class="btn btn-primary" (click)="CustObsSubscribe()">
+          Subscribe
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ex - 02 -->
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-header"><strong>Data:</strong> Custom Interval</div>
+      <div class="card-body">
+        <ul id="custObs2-container" class="custObs" [ngClass]="obsStatus2 == 'completed'?'completed':obsStatus2 == 'error'?'error':''"></ul>
+        <p *ngIf="obsStatus2">status: {{obsStatus2}}</p>
+      </div>
+      <div class="card-footer">
+        <button class="btn btn-primary" (click)="CustObs2Subscribe()">
+          Subscribe
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

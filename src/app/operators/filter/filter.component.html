@@ -1,0 +1,55 @@
+<h3>Filter</h3>
+
+<hr />
+<div class="row">
+  <div class="col-md-4">
+    <h5 class="pt-3">Ex - 01</h5>
+    <div class="card">
+      <div class="card-header"><strong>Filter:</strong> by length `name.length > 6`</div>
+      <div class="card-body">
+        <ul id="container1">
+          <li *ngFor="let user of data1">{{user.name +' - '+ user.skills}}</li>
+        </ul>
+      </div>
+      <div class="card-footer">
+        <button class="btn btn-primary" (click)="Subscribe1()">
+          Subscribe
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <h5 class="pt-3">Ex - 02</h5>
+    <div class="card">
+      <div class="card-header"><strong>Filter:</strong> by Skills (skills == 'Angular')</div>
+      <div class="card-body">
+        <ul id="container2">
+          <li *ngFor="let user of data2">{{user.name +' - '+ user.skills}}</li>
+        </ul>
+      </div>
+      <div class="card-footer">
+        <button class="btn btn-primary" (click)="Subscribe2()">
+          Subscribe
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <h5 class="pt-3">Ex - 03</h5>
+    <div class="card">
+      <div class="card-header">
+        <strong>Filter:</strong> by nth item
+      </div>
+      <div class="card-body">
+        <ul id="container3">
+          <li *ngFor="let user of data3">{{user.name +' - '+ user.skills}}</li>
+        </ul>
+      </div>
+      <div class="card-footer">
+        <button class="btn btn-primary" (click)="Subscribe3()">
+          Subscribe
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

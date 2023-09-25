@@ -1,5 +1,8 @@
 <div class="container">
-  <h4 class="pt-3 pointer" routerLink="">RxJs Tutorial | Operators</h4>
+  <h4 class="pt-3 pointer justify-content-center" routerLink="">RxJs Tutorial | Operators
+    <span *ngIf="isSubscibed" class="badge bg-primary">Subscibed</span>
+    <span *ngIf="username" class="badge bg-secondary float-right">User: {{username}}</span>
+  </h4>
   <hr>
   <router-outlet></router-outlet>
 </div>

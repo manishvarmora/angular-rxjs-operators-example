@@ -1,0 +1,71 @@
+<h3>ReplaySubject</h3>
+<hr />
+<div class="row justify-content-center">
+  <div class="col-md-4">
+    <input type="text" class="form-control col-md-4" #video>
+  </div>
+  <button type="button" class="btn btn-primary col-md-1" (click)="addVideo(video.value)">Add</button>
+</div>
+<hr />
+<div class="row">
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-header">
+        <strong>Ex 01: User 1</strong>
+      </div>
+      <div class="card-body">
+        <ul class="container1">
+          <li *ngFor="let item of userList1">
+            <strong>Video: </strong>{{ item }}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-header">
+        <strong>Ex 02: User 2</strong>
+      </div>
+      <div class="card-body">
+        <ul class="container2">
+          <li *ngFor="let item of userList2">
+            <strong>Video: </strong>{{ item }}
+          </li>
+        </ul>
+      </div>
+      <div class="card-footer">
+        <button
+          class="btn btn-sm"
+          [ngClass]="subsccriptionMode2 ? 'btn-danger' : 'btn-success'"
+          (click)="subscribe2()"
+        >
+          {{ subsccriptionMode2 ? "Unsubscibe" : "Subscribe" }}
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-header">
+        <strong>Ex 03: User 3</strong>
+      </div>
+      <div class="card-body">
+        <ul class="container3">
+          <li *ngFor="let item of userList3">
+            <strong>Video: </strong>{{ item }}
+          </li>
+        </ul>
+      </div>
+      <div class="card-footer">
+        <button
+          class="btn btn-sm"
+          [ngClass]="subsccriptionMode3 ? 'btn-danger' : 'btn-success'"
+          (click)="subscribe3()"
+        >
+          {{ subsccriptionMode3 ? "Unsubscibe" : "Subscribe" }}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

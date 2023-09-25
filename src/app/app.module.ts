@@ -10,6 +10,21 @@ import { CustomObservableComponent } from './operators/custom-observable/custom-
 import { MapComponent } from './operators/map/map.component';
 import { PluckComponent } from './operators/pluck/pluck.component';
 import { FilterComponent } from './operators/filter/filter.component';
+import { TapComponent } from './operators/tap/tap.component';
+import { TakeComponent } from './operators/take/take.component';
+import { RetryComponent } from './operators/retry/retry.component';
+import { DebounceComponent } from './operators/debounce/debounce.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ConcatMergeComponent } from './operators/concat-merge/concat-merge.component';
+import { MergeMapComponent } from './operators/merge-map/merge-map.component';
+import { ConcatMapComponent } from './operators/concat-map/concat-map.component';
+import { SwitchMapComponent } from './operators/switch-map/switch-map.component';
+import { ExhaustMapComponent } from './operators/exhaust-map/exhaust-map.component';
+import { CombineLatestComponent } from './operators/combine-latest/combine-latest.component';
+import { ZipForkComponent } from './operators/zip-fork/zip-fork.component';
+import { CatchThrowErrorComponent } from './operators/catch-throw-error/catch-throw-error.component';
+import { BehaviorSubjectComponent } from './operators/behavior-subject/behavior-subject.component';
+import { ReplySubjectComponent } from './operators/reply-subject/reply-subject.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +35,26 @@ import { FilterComponent } from './operators/filter/filter.component';
     CustomObservableComponent,
     MapComponent,
     PluckComponent,
-    FilterComponent
+    FilterComponent,
+    TapComponent,
+    TakeComponent,
+    RetryComponent,
+    DebounceComponent,
+    ConcatMergeComponent,
+    MergeMapComponent,
+    ConcatMapComponent,
+    SwitchMapComponent,
+    ExhaustMapComponent,
+    CombineLatestComponent,
+    ZipForkComponent,
+    CatchThrowErrorComponent,
+    BehaviorSubjectComponent,
+    ReplySubjectComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

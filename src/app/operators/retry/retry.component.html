@@ -1,0 +1,22 @@
+<h3>Retry, RetryWhen, Scan, Delay</h3>
+
+<hr />
+<div class="row">
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-header"><strong>Ex 01: <span class="text-muted">Use above operator when have error in http API call</span></strong></div>
+      <div class="card-body" *ngIf="data">
+        <strong>Name: </strong>{{data.name}}<hr>
+        <strong>Phone: </strong>{{data.phone}}<hr>
+        <strong>Email: </strong>{{data.email}}<hr>
+        <strong>Username: </strong>{{data.username}}<hr>
+        <strong>Website: </strong>{{data.website}}
+      </div>
+      <div class="card-footer">
+        <button class="btn btn-primary" (click)="Subscribe1()">
+          Fetch Data
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

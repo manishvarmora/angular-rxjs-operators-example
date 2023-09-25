@@ -25,6 +25,7 @@ import { ZipForkComponent } from './operators/zip-fork/zip-fork.component';
 import { CatchThrowErrorComponent } from './operators/catch-throw-error/catch-throw-error.component';
 import { BehaviorSubjectComponent } from './operators/behavior-subject/behavior-subject.component';
 import { ReplySubjectComponent } from './operators/reply-subject/reply-subject.component';
+import { ShareReplayComponent } from './operators/share-replay/share-replay.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { ReplySubjectComponent } from './operators/reply-subject/reply-subject.c
     ZipForkComponent,
     CatchThrowErrorComponent,
     BehaviorSubjectComponent,
-    ReplySubjectComponent
+    ReplySubjectComponent,
+    ShareReplayComponent
   ],
   imports: [
     BrowserModule,

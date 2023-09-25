@@ -22,6 +22,7 @@ import { ZipForkComponent } from './operators/zip-fork/zip-fork.component';
 import { CatchThrowErrorComponent } from './operators/catch-throw-error/catch-throw-error.component';
 import { BehaviorSubjectComponent } from './operators/behavior-subject/behavior-subject.component';
 import { ReplySubjectComponent } from './operators/reply-subject/reply-subject.component';
+import { ShareReplayComponent } from './operators/share-replay/share-replay.component';
 
 const routes: Routes = [
   { path: '', component: ListComponent },
@@ -41,6 +42,7 @@ const routes: Routes = [
   { path: 'concat-map', component: ConcatMapComponent },
   { path: 'switch-map', component: SwitchMapComponent },
   { path: 'exhaust-map', component: ExhaustMapComponent },
+  { path: 'share-replay', component: ShareReplayComponent },
   { path: 'combinelatest', component: CombineLatestComponent },
   { path: 'zip-fork', component: ZipForkComponent },
   { path: 'catcherror', component: CatchThrowErrorComponent },

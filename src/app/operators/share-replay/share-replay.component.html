@@ -1,0 +1,49 @@
+<h3>ShareReplay</h3>
+<hr />
+<div class="row">
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-header">
+        <strong>Ex 01: All Data</strong>
+      </div>
+      <div class="card-body">
+        <ul id="container1">
+          <li *ngFor="let item of AllDAta | async">{{item.title}}
+            <span class="text-info" *ngIf="item.completed">{{item.completed}}</span>
+            <span class="text-danger" *ngIf="!item.completed">{{item.completed}}</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-header">
+        <strong>Ex 02: Completed:true filter data</strong>
+      </div>
+      <div class="card-body">
+        <ul id="container2">
+          <li *ngFor="let item of CompletedTrue | async">{{item.title}}
+            <span class="text-info" *ngIf="item.completed">{{item.completed}}</span>
+            <span class="text-danger" *ngIf="!item.completed">{{item.completed}}</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-header">
+        <strong>Ex 03: Completed:false filter data</strong>
+      </div>
+      <div class="card-body">
+        <ul id="container3">
+          <li *ngFor="let item of CompletedFalse | async">{{item.title}}
+            <span class="text-info" *ngIf="item.completed">{{item.completed}}</span>
+            <span class="text-danger" *ngIf="!item.completed">{{item.completed}}</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
